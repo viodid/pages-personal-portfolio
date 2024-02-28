@@ -254,6 +254,10 @@ ul {
 .site-inner main .page-sites {
     border-top: 10px solid #e7d8c0;
 }
+.site-inner main .page-pdf {
+    border-top: 10px solid #e5a5a2;
+    text-align: center;
+}
 .site-inner aside {
     max-width: 360px;
     font-size: 16px;
