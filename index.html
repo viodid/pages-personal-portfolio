@@ -78,33 +78,44 @@
                 <div itemprop="text">
                     <h3><a href="https://www.nunegal.com/web/" target="_blank">Software Developer • Nunegal Consulting</a>
                     </h3>
-                    <h4>Remote • 2024 - Present</h4>
-                    <p>Working in the Cloud Data Platform at Inditex, the world's largest <a href="https://en.wikipedia.org/wiki/Inditex">fast fashion group</a>, 
-                    where I develop NLP agentic systems for task automation, and expose all sorts of internal and external APIs through the Model Context Protocol (MCP).</p>
-                    <p>Additionally, I'm involved in developing and maintaining extensive pipelines, automating resource-intensive tasks related to cloud infrastructure management and deployment.</p>
+                    <h4>Client: <a href="https://en.wikipedia.org/wiki/Inditex" target="_blank">Zara Group / Inditex</a> • Remote • 2024 - Present</h4>
+                    <p>Leading the technical design and development of an internal Agentic AI Platform for
+                        infrastructure automation, guiding and coordinating a team of 3 engineers through execution.</p>
+                    <p>Built a full-stack autonomous DevOps agent (FastAPI/Python, React) capable of inspecting
+                        workspaces, editing files, and executing code natively. Implemented an Agentic Workflow
+                        leveraging a Tool-use / Model Context Protocol (MCP) approach to orchestrate complex tasks —
+                        generating Infrastructure as Code (IaC), validating configurations, and automating Git
+                        operations.</p>
+                    <p>Engineered robust backend integrations with multiple LLM providers and Inditex's core Data
+                        DevOps platform, centralizing infrastructure operations for over 100 engineers. Reduced the
+                        Data DevOps team's manual workload by 80% while scaling the platform to handle hundreds of
+                        concurrent requests reliably.</p>
                 </div>
                 <div itemprop="text">
-                    <h3><a href="https://the-cocktail.com/" target="_blank">DevOps & Cloud Architect • The Cocktail</a>
+                    <h3><a href="https://www.vml.com/" target="_blank">DevOps • VML The Cocktail</a>
                     </h3>
-                    <h4>Junior • Hybrid • 2023 - 2024</h4>
-                    <p>Full-time role with the Data DevOps team in the client Inditex, where I developed and
-                        maintained extensive and complex pipelines, automating resource-intensive tasks using Python
-                        and Golang.</p>
-                    <p>Led the creation, maintenance, and deployment of ADO pipelines, enabling an automated
-                        approach to deploying and managing all sorts of operations within the Databricks platform.
-                    </p>
+                    <h4>Client: Zara Group / Inditex • Hybrid • 2023 - 2024</h4>
+                    <p>Engineered reusable CI/CD pipeline modules using Python and Go for backend services,
+                        streamlining large-scale cloud data operations and accelerating deployment cycles for the
+                        Data DevOps team at Inditex.</p>
+                    <p>Automated interactive Databricks cluster deployments by establishing custom deployment
+                        policies, significantly reducing operational friction for the Analytics team and accelerating
+                        data processing workflows.</p>
                 </div>
                 <hr>
                 <div itemprop="text">
-                    <h3><a href="https://the-cocktail.com/" target="_blank">DevOps & Cloud Architect • The Cocktail</a>
+                    <h3><a href="https://www.vml.com/" target="_blank">DevOps Intern • VML The Cocktail</a>
                     </h3>
                     <h4>Internship • Hybrid • 2023</h4>
-                    <p>Managing and deploying Azure Kubernetes Services (AKS) for various clients. I played a key role
-                        in developing end-to-end CI/CD pipelines using Azure DevOps, implementing IaC with Terraform,
-                        and ensuring code quality with Bitbucket and SonarQube.</p>
-                    <p>I contributed to the architectural process, providing insights for
-                        efficient cloud solutions and actively participating in the cloud infrastructure design process.
-                    </p>
+                    <p>Architected Generative AI Proofs of Concept utilizing OpenAI, LangChain, and Whisper —
+                        including a batch transcription pipeline for a call center capable of processing thousands of
+                        calls, alongside semantic web search engines and conversational chatbots. Demonstrated AI
+                        capabilities to executive stakeholders, directly driving the commercialization and continued
+                        funding of multiple PoCs.</p>
+                    <p>Also managed and deployed Azure Kubernetes Services (AKS) for various clients, contributing to
+                        end-to-end CI/CD pipelines on Azure DevOps, implementing IaC with Terraform, and ensuring code
+                        quality with Bitbucket and SonarQube. Participated in the cloud infrastructure design process,
+                        providing insights for efficient cloud solutions.</p>
                 </div>
             </article>
             <article class="page-sites">
@@ -134,6 +145,44 @@
                 </div>
                 -->
                 <div itemprop="text">
+                    <h3><a href="https://github.com/viodid/webserv" target="_blank">webserv</a></h3>
+                    <h4>Co-author • 42 School • 2025</h4>
+                    <p>An NGINX-inspired HTTP/1.1 web server written from scratch in C++98. Single-threaded and
+                        event-driven, built on a Reactor pattern over <code>poll(2)</code> so a single process can
+                        multiplex many clients, listening sockets, CGI children, and disk I/O without blocking.
+                        Message framing follows RFC 9112; the configuration file is a small subset of NGINX.</p>
+                    <p>Supports GET, HEAD, POST, PUT, DELETE; chunked transfer-encoding; non-blocking CGI;
+                        <code>multipart/form-data</code> uploads; virtual servers with location blocks; redirects;
+                        autoindex; custom error pages; per-server body-size limits.
+                    </p>
+                    <p><u>Stack:</u> C++98 (strict subset, no external deps), <code>poll(2)</code>, sockets, CGI.<br>
+                        Tested with GoogleTest unit suite + a Python end-to-end test runner.
+                    </p>
+                    <a href="https://github.com/viodid/webserv" target="_blank">Link to repository</a>
+                </div>
+                <hr>
+                <div itemprop="text">
+                    <h3><a href="https://github.com/viodid/minishell" target="_blank">minishell</a></h3>
+                    <h4>Creator • 42 School • 2024</h4>
+                    <p>A minimalist, POSIX-inspired Unix shell written from scratch in C. Reads a line, tokenizes it
+                        with a metacharacter-aware lexer, builds an AST via recursive-descent parsing, expands
+                        variables, then sets up pipes and redirections to execute the resulting pipeline — mimicking
+                        a subset of <code>bash</code> behavior under strict 42 constraints (limited libc whitelist,
+                        <code>-Wall -Wextra -Werror</code>, zero leaks).</p>
+                    <p>Supports pipes of arbitrary length, redirections (<code>&lt;</code>, <code>&gt;</code>,
+                        <code>&gt;&gt;</code>, heredocs), variable expansion (<code>$VAR</code>, <code>$?</code>,
+                        single/double-quote rules), and seven built-ins implemented from scratch: <code>cd</code>,
+                        <code>echo</code>, <code>env</code>, <code>exit</code>, <code>export</code>, <code>pwd</code>,
+                        <code>unset</code>. Interactive and non-interactive signal modes mirror <code>bash</code>.
+                    </p>
+                    <p><u>Stack:</u> C (C99), GNU <code>readline</code>, POSIX system calls
+                        (<code>fork</code>/<code>execve</code>/<code>pipe</code>/<code>dup2</code>/<code>waitpid</code>).<br>
+                        AddressSanitizer and LeakSanitizer build targets for memory hygiene.
+                    </p>
+                    <a href="https://github.com/viodid/minishell" target="_blank">Link to repository</a>
+                </div>
+                <hr>
+                <div itemprop="text">
                     <h3>RAG PoC Chatbot</h3>
                     <h4>Creator, Administrator • 2023</h4>
                     <p>As part of my role at The Cocktail, I took the initiative to develop an advanced chatbot
@@ -153,6 +202,7 @@
                         </a>
                     </div>
                 </div>
+                <hr>
                 <div itemprop="text">
                     <h3><a href="https://pomotracker.app" target="_blank">PomoTracker</a></h3>
                     <h4>Creator, Administrator • 2022 - 2023</h4>
@@ -177,6 +227,7 @@
                         </a>
                     </div>
                 </div>
+                <!--
                 <hr>
                 <div itemprop="text">
                     <h3><a href="https://github.com/viodid/CLRS" target="_blank">CLRS Book</a></h3>
@@ -189,6 +240,8 @@
                     <a href="https://github.com/viodid/CLRS/blob/master/python_solutions.py" target="_blank">Link to
                         solutions</a>
                 </div>
+                -->
+
             </article>
             <article class="page-skills">
                 <header itemprop="headline">
@@ -205,28 +258,65 @@
                     </ul>
                 </div>
                 <div itemprop="text">
+                    <h3>Frameworks & Libraries:</h3>
+                    <ul>
+                        <li>FastAPI</li>
+                        <li>Django</li>
+                        <li>Flask</li>
+                        <li>React</li>
+                        <li>LangChain</li>
+                    </ul>
+                </div>
+                <div itemprop="text">
+                    <h3>Databases:</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Milvus</li>
+                        <li>Qdrant</li>
+                        <li>InfluxDB</li>
+                    </ul>
+                </div>
+                <div itemprop="text">
                     <h3>SaaS, PaaS, and Systems:</h3>
                     <ul>
-                        <li>Azure Devops</li>
-                        <li>Github Actions</li>
+                        <li>Azure DevOps</li>
+                        <li>GitHub Actions</li>
                         <li>Docker/Containers</li>
-                        <li>Databricks</li>
-                        <li>Linux</li>
+                        <li>Kubernetes (k8s)</li>
+                        <li>Terraform</li>
+                        <li>OpenTelemetry (OTel)</li>
                     </ul>
                 </div>
                 <div itemprop="text">
                     <h3>Cloud:</h3>
                     <ul>
-                        <li>Azure</li>
+                        <li>Azure (AKS, Container Apps, Azure Functions)</li>
                         <li>AWS</li>
                     </ul>
                 </div>
             </article>
             <article class="page-pdf">
-                <a href="docs/david-yunta-resume-2026.pdf" target="_blank">View Resume (PDF)</a>
+                <a href="docs/david-yunta-resume-2026-05-17.pdf" target="_blank">View Resume (PDF)</a>
             </article>
         </main>
         <aside class="sidebar" role="complementary">
+            <section class="widget-education">
+                <h2>Education</h2>
+                <div>
+                    <h3><a href="https://en.wikipedia.org/wiki/42_(school)" target="_blank">42 School</a></h3>
+                    <h4>Software Engineering · 2022 - 2025</h4>
+                    <p>As part of the Telefónica Foundation, 42 School offers computer science education with an
+                        emphasis on software development. <strong>Common Core Curriculum completed.</strong></p>
+                    <p>The curriculum covers problem-solving, design patterns,
+                        data structures, OOP, Linux system administration, containerization, virtualization, and more.
+                    </p>
+                    <h3><a href="https://musikene.eus/?lang=en" target="_blank">College Music Center of the Basque
+                            Country</a></h3>
+                    <h4>2015-2019</h4>
+                    <p><strong>Bachelor of Classical Music</strong> in Classical Composition with a minor in violin.</p>
+                </div>
+            </section>
             <section class="widget-certificates">
                 <h2>Certificates</h2>
                 <div>
@@ -270,22 +360,7 @@
                         </a></p>
                 </div>
             </section>
-            <section class="widget-education">
-                <h2>Education</h2>
-                <div>
-                    <h3><a href="https://en.wikipedia.org/wiki/42_(school)" target="_blank">42 School</a></h3>
-                    <h4>Software Engineering · 2022 - 2024</h4>
-                    <p>As part of the Telefónica Foundation, 42 School offers computer science education with an
-                        emphasis on software development.</p>
-                    <p>The curriculum covers problem-solving, design patterns,
-                        data structures, OOP, Linux system administration, containerization, virtualization, and more.
-                    </p>
-                    <h3><a href="https://musikene.eus/?lang=en" target="_blank">College Music Center of the Basque
-                            Country</a></h3>
-                    <h4>2015-2019</h4>
-                    <p><strong>Bachelor of Classical Music</strong> in Classical Composition with a minor in violin.</p>
-                </div>
-            </section>
+            <!--
             <section class="widget-courses">
                 <h2>Languages</h2>
                 <div>
@@ -294,16 +369,17 @@
                     <h3>English</h3>
                     <h4>C1 Cambridge Certified</h4>
             </section>
+            -->
+
             <section class="widget-certificates">
                 <h2>Interests</h2>
                 <div>
-                    <h3>DevOps</h3>
-                    <p>I am currently gaining knowledge in the field of DevOps and
-                        working towards obtaining the CKA (Certified Kubernetes Administrator) certification.</p>
-                    <h3>Software Development</h3>
-                    <p>My interests revolve around software development, with a
-                        specific focus on Natural Language Processing (NLP) and AI, particularly Retrieval Augmented
-                        Generation (RAG) landscape.</p>
+                    <h3>Agentic AI</h3>
+                    <p>Designing and building autonomous AI systems — Agentic Workflows, Tool-use,
+                        and Model Context Protocol (MCP) orchestration for real-world automation.</p>
+                    <h3>Backend & Platform Engineering</h3>
+                    <p>Architecting scalable, production-grade backend systems and platforms that
+                        bridge intelligent automation with cloud infrastructure at scale.</p>
                 </div>
             </section>
             <section class="widget-hobbies">
@@ -338,7 +414,7 @@
         </aside>
     </div>
     <footer role="contentinfo">
-        <p>© 2025 · <a href="https://github.com/viodid">Viodid</a> · David Yunta</p>
+        <p>© 2026 · <a href="https://github.com/viodid">Viodid</a> · David Yunta</p>
     </footer>
     <script src="jquery-1.11.1.min.js"></script>
     <script src="magnific.min.js"></script>
